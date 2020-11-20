@@ -1,5 +1,5 @@
 # docker_randchar
-Here is the commands to create volumes:
+This is the commands to create volumes:
 1. Creating the volume: docker volume create [volume_name]   ex. docker volume create servervol
 2. Mounting the volume: docker run -it --mount source=[volumename], destination=[destination_of_containter] [containter_image]
   ex. docker run -it --mount source=servervol,destination=/serverdata debian
