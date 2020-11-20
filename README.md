@@ -10,3 +10,7 @@ nano [pythonfile_name].py    ex. nano app/text_gen.py
 To get into the container shell, type:
 docker exec -it [containter_name] /bin/bash (type docker ps to find the name of the containter)
 In it, you can type and execute your commands. 
+
+To run the docker do and view the output contents:
+docker run -d -p 5000:5000 [name of image]  ex. docker run -d -p 5000:5000 [assignment2]
+curl [web-address]                          ex. curl http://localhost:5000
