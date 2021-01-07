@@ -17,6 +17,7 @@ To build image:
 docker build -t [image_name] .
 
 To run the docker do and view the output contents:
+
 docker run -d -p 5000:5000 [name_of_image]  ex. docker run -d -p 5000:5000 [assignment2]
 curl [web-address]                          ex. curl http://localhost:5000
 
