@@ -2,11 +2,13 @@
 ### Used to Docker to deploy a web app that outputs 100 random characters that was previously written to a text file, and output 100 new random characters that will be written to the text file to replace previous characters.
 
 #### This is the commands to create volumes:
+##### 1. Creating the volume: 
 ```
-1. Creating the volume: docker volume create [volume_name]   ex. docker volume create servervol
+docker volume create [volume_name]   ex. docker volume create servervol
 ```
+##### 2. Mounting the volume: 
 ```
-2. Mounting the volume: docker run -it --mount source=[volumename], destination=[destination_of_containter] [containter_image]
+docker run -it --mount source=[volumename], destination=[destination_of_containter] [containter_image]
   ex. docker run -it --mount source=servervol,destination=/serverdata debian
 ```
 #### To make a python file write: 
